@@ -114,6 +114,7 @@ Usage is best shown by an example of Apache configuration: ::
     PythonOption Domain WDOMAIN
     PythonOption PDC 192.1.2.45
     PythonOption BDC 192.1.2.46
+    PythonOption Require valid-user
 
     # Bypass authentication for local clients.
     # Comment these lines if they should authenticate too.
@@ -139,6 +140,7 @@ Apache option                          Description
 =====================================  ======
 AuthType NTLM                          Always specify it like this.  
 Require valid-user                     Always specify it like this.
+PythonOption Require valid-user        Always specify it like this.
 Require user XYZ,WTY                   | Grants access only to users named XYZ or WTY.
                                        | Multiple "Require user" option lines can be specified.
 AuthName *domain*                      Replace *domain* with the domain name to present to
